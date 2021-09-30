@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Search Results</title>
+    <title>Categories</title>
     <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -31,16 +31,10 @@
 
   <link rel="icon" type="image/png" href="/web/images/nl_logo_hue7a87928358816f147082b62e64af9f2_460156_42x0_resize_box_3.png" />
 
-<meta property="og:title" content="Search Results" />
-<meta property="og:description" content="This file exists solely to respond to /search URL with the related search layout template.
-No content shown here is rendered, all content is based in the template layouts/page/search.html
-Setting a very low sitemap priority will tell search engines this is not important content.
-This implementation uses Fusejs, jquery and mark.js
-Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&ldquo;HTML&rdquo;, &ldquo;JSON&rdquo;] ```" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://nilslaumaille.github.io/web/search/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2010-06-08T08:06:25+06:00" />
-<meta property="article:modified_time" content="2010-06-08T08:06:25+06:00" />
+<meta property="og:title" content="Categories" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://nilslaumaille.github.io/web/en/categories/" />
 
 
 
@@ -95,7 +89,7 @@ Initial setup Search depends on additional output content type of JSON in config
       <button class="navbar-toggler navbar-light" id="sidebar-toggler" type="button" onclick="toggleSidebar()">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" href="/web">
+    <a class="navbar-brand" href="/web/en">
       
         <img src="/web/images/nl_logo_hue7a87928358816f147082b62e64af9f2_460156_42x0_resize_box_3.png" alt="Logo">
       Nils</a>
@@ -105,6 +99,29 @@ Initial setup Search depends on additional output content type of JSON in config
 
     <div class="collapse navbar-collapse lang-selector" id="top-nav-items">
       <ul class="navbar-nav ml-auto">
+      
+        
+
+  
+
+
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="languageSelector" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      
+      <span class="flag-icon flag-icon-gb"></span>
+      English
+    </a>
+    <div class="dropdown-menu" aria-labelledby="languageSelector">
+      
+        <a class="dropdown-item nav-link languages-item" href="/fr/web/en/categories">
+          
+          <span class="flag-icon flag-icon-fr"></span>
+          Français
+        </a>
+      
+    </div>
+</li>
+
       
       </ul>
     </div>
@@ -130,14 +147,21 @@ Initial setup Search depends on additional output content type of JSON in config
   <section class="sidebar-section" id="sidebar-section">
     <div class="sidebar-holder">
       <div class="sidebar" id="sidebar">
-        <form class="mx-auto" method="get" action="/web/search">
+        <form class="mx-auto" method="get" action="/web/en/search">
           <input type="text" name="keyword" value="" placeholder="Search" data-search="" id="search-box" />
         </form>
         <div class="sidebar-tree">
           <ul class="tree" id="tree">
-            <li id="list-heading"><a href="/web/posts" data-filter="all">Articles</a></li>
-            <div class="subtree">
-                
+            <li id="list-heading"><a href="/web/en/categories" data-filter="all">Categories</a></li>
+            <div class="subtree taxonomy-terms">
+              
+              
+
+
+
+  
+  
+
 
             </div>
           </ul>
@@ -152,29 +176,12 @@ Initial setup Search depends on additional output content type of JSON in config
 <section class="content-section" id="content-section">
   <div class="content container-fluid" id="content">
     <div class="container-fluid post-card-holder" id="post-card-holder">
-      <div id="search-results">
-
-        <script id="search-result-template" type="text/x-js-template">
-          <div class="post-card">
-            <a href="${link}" class="post-card-link">
-              <div class="card" style="min-height: 352px;"><a href="${link}" class="post-card-link">
-                <div class="card-head">
-                  <img class="card-img-top" src="${hero}" alt="Card Heading Image">
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">${title}</h5>
-                  <p class="card-text post-summary">${summary}</p>
-                </div>
-                <div class="card-footer">
-                  <span class="float-left">${date}</span>
-                  <a href="${link}" class="float-right btn btn-outline-info btn-sm">Read</a>
-                </div>
-              </div>
-	          </a>
-          </div>
-        </script>
-
-      </div>
+      
+      
+      
+    </div>
+    <div class="paginator">
+      
     </div>
   </div>
 </section>
@@ -203,18 +210,11 @@ Initial setup Search depends on additional output content type of JSON in config
 
   
   
-    
-  
 
   
   
 
   
-  
-    
-    
-      
-    
   
 
 
@@ -247,17 +247,6 @@ Initial setup Search depends on additional output content type of JSON in config
         </div>
         
         
-        <div class="col-md-4 col-sm-12">
-          <h5>Contactez moi :</h5>
-          <ul>
-            
-            <li><span>Email: </span> <span>nils@laumaille.fr</span></li>
-            
-            <li><span>Phone: </span> <span>0604488956</span></li>
-            
-          </ul>
-        </div>
-        
         
         
       </div>
@@ -273,9 +262,9 @@ Initial setup Search depends on additional output content type of JSON in config
             Toha
           </a>
         </div>
-        <div class="col-md-4 text-center">© 2021 Tous droits réservés.</div>
+        <div class="col-md-4 text-center">© 2021 Copyright.</div>
         <div class="col-md-4 text-right">
-          <a id="hugo" href="https://gohugo.io/" target="_blank" rel="noopener">Alimenté par
+          <a id="hugo" href="https://gohugo.io/" target="_blank" rel="noopener">Powered by
           <img
             src="/web/images/hugo-logo.svg"
             alt="Hugo Logo"
@@ -300,9 +289,7 @@ Initial setup Search depends on additional output content type of JSON in config
 
     
     
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.0/fuse.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js"></script>
-<script src="https://nilslaumaille.github.io/js/search.js"></script>
+    <script src="/web/js/list.js"></script>
 
   </body>
 </html>
