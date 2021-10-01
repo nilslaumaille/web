@@ -163,14 +163,5 @@ This implementation uses Fusejs, jquery and mark.js
 Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&amp;ldquo;HTML&amp;rdquo;, &amp;ldquo;JSON&amp;rdquo;] ```</description>
     </item>
     
-    <item>
-      <title>Analytics and Comments</title>
-      <link>https://nilslaumaille.github.io/web/posts/flexfluel/</link>
-      <pubDate>Mon, 08 Jun 2020 06:00:23 +0600</pubDate>
-      
-      <guid>https://nilslaumaille.github.io/web/posts/flexfluel/</guid>
-      <description>Complete Post Coming Soon&amp;hellip; </description>
-    </item>
-    
   </channel>
 </rss>
