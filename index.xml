@@ -6,7 +6,7 @@
     <description>Recent content on Nils Laumaillé</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language>
-    <lastBuildDate>Mon, 08 Jun 2020 06:00:23 +0600</lastBuildDate><atom:link href="https://nils.laumaille.fr/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 02 Oct 2021 06:00:23 +0600</lastBuildDate><atom:link href="https://nils.laumaille.fr/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Resultados de Búsqueda</title>
       <link>https://nils.laumaille.fr/search/</link>
@@ -317,6 +317,16 @@ No content shown here is rendered, all content is based in the template layouts/
 Setting a very low sitemap priority will tell search engines this is not important content.
 This implementation uses Fusejs, jquery and mark.js
 Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&amp;ldquo;HTML&amp;rdquo;, &amp;ldquo;JSON&amp;rdquo;] ```</description>
+    </item>
+    
+    <item>
+      <title>Installer un boitier Flexfuel</title>
+      <link>https://nils.laumaille.fr/posts/mecanique/flexfuel/</link>
+      <pubDate>Sat, 02 Oct 2021 06:00:23 +0600</pubDate>
+      
+      <guid>https://nils.laumaille.fr/posts/mecanique/flexfuel/</guid>
+      <description>Cet article fait un peu le résumé de toutes mes recherches sur la notion de boitier éthanol car effectivement le fait de pouvoir rouler un peu moins cher à suscité en moi une certaine curiosité.
+Quelques généralités Boitier éthanol, késako ? Les boîtiers E85 sont des boitiers électroniques qui se positionnent sous le capot, au niveau du moteur. Ils permettent au moteur d’injecter la bonne quantité de carburant en fonction de la proportion d’éthanol présente dans le réservoir pour un fonctionnement optimal.</description>
     </item>
     
     <item>
@@ -326,16 +336,6 @@ Initial setup Search depends on additional output content type of JSON in config
       
       <guid>https://nils.laumaille.fr/posts/bricolage/nuki/</guid>
       <description>En cours d&amp;rsquo;écriture &amp;hellip; </description>
-    </item>
-    
-    <item>
-      <title>Installer un boitier Flexfuel</title>
-      <link>https://nils.laumaille.fr/posts/mecanique/flexfuel/</link>
-      <pubDate>Mon, 08 Jun 2020 06:00:23 +0600</pubDate>
-      
-      <guid>https://nils.laumaille.fr/posts/mecanique/flexfuel/</guid>
-      <description>Cet article fait un peu le résumé de toutes mes recherches sur la notion de boitier éthanol car effectivement le fait de pouvoir rouler un peu moins cher à suscité en moi une certaine curiosité.
-Quelques généralités Boitier éthanol, késako ? Les boîtiers E85 sont des boitiers électroniques qui se positionnent sous le capot, au niveau du moteur. Ils permettent au moteur d’injecter la bonne quantité de carburant en fonction de la proportion d’éthanol présente dans le réservoir pour un fonctionnement optimal.</description>
     </item>
     
     <item>
