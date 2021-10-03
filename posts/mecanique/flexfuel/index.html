@@ -281,6 +281,9 @@ Une sonde mesure la proportion d’éthanol dans le carburant. Plus elle est él
 <p>En faisant quelques recherches, on s&rsquo;aperçoit rapidement que 2 types de boitiers existent. D&rsquo;un côté, ceux composés d&rsquo;un boitier et d&rsquo;un capteur de carburant, et ceux uniquement composé d&rsquo;un boitier.
 Je ne parlerais que des 1ers, car je reste sceptique qu&rsquo;en a la qualité des signaux d&rsquo;injections des modèles sans capture du carburant. En effet, comment modifier le temps d&rsquo;injection avec précision si l&rsquo;on ne connait pas la ratio d&rsquo;éthanol précisément ?
 Donc pas d&rsquo;hésitation, il s&rsquo;agit d&rsquo;ors et déjà de ne cibler que des boitiers ayant un capteur de carburant.</p>
+<blockquote>
+<p>Un des avantages que je vois également avec le système à capteur, c&rsquo;est qu&rsquo;il est possible de rouler avec la proportion d&rsquo;éthanol que l&rsquo;on souhaite sans avoir à ce soucier d&rsquo;une forme d&rsquo;adaptation du boitier. Également, il n&rsquo;est pas nécessaire de faire un plein en 2 fois (éthanol puis sans plomb).</p>
+</blockquote>
 <h2 id="quel-est-le-principe-de-fonctionnement-">Quel est le principe de fonctionnement ?</h2>
 <p>Il s&rsquo;agit tout simplement de garder ouvert un peu plus longtemps les injecteurs afin que ces derniers envoient plus de carburant. Pour cela on va intercaler entre le calculateur et les injecteurs un autre calculateur (le fameux boîtier éthanol). Ce dernier sera connecté à une sonde mise à l&rsquo;arrivée de carburant pour qu&rsquo;il sache si il doit retarder ou pas la fermeture des injecteurs. Si il n&rsquo;y a pas de sonde de carburant avec le boîtier alors il ne sera pas au courant si il fonctionne à l&rsquo;éthanol ou au sans plomb, et dans ce cas seule la sonde lambda pourra corriger en partie la richesse. L&rsquo;idéal reste donc que le boîtier soit aussi au courant du carburant utilisé afin qu&rsquo;il augmente ou pas les temps d&rsquo;ouverture des injecteurs.
 Dans le cas où il y a de l&rsquo;éthanol, ce dernier va ouvrir plus longtemps les injecteurs, ce qui permettra donc d&rsquo;arriver au dosage 10/1 de l&rsquo;éthanol (en réalité un peu plus, car on ne tourne pas à 100% d&rsquo;éthanol en France : E85%). C&rsquo;est donc lui qui va déduire le temps d&rsquo;ouverture supplémentaire à faire faire aux injecteurs.
@@ -299,6 +302,9 @@ Pourquoi ? Pour les avis, la qualité apparente du produit, l&rsquo;historique d
 <p>L&rsquo;installation en soit n&rsquo;est pas bien compliquée dès lors que l&rsquo;on dispose d&rsquo;une petite caisse à outils classique et de quelques notions de bricolage mécanique.
 En effet, le point le plus dangereux de la manipulation consiste à venir dériver la conduite d&rsquo;admission du carburant de la rampe d&rsquo;injection vers le capteur d&rsquo;analyse du carburant.
 À noter qu&rsquo;il est important de se munir d&rsquo;un bon lot de serflex, en effet la boite d&rsquo;installation n&rsquo;en contenant qu&rsquo;un nombre limité.</p>
+<blockquote>
+<p>À noter que je n&rsquo;avais pas fait de complément en éthanol dans le réservoir, j&rsquo;étais à environ la moitier du réservoir en SP98.</p>
+</blockquote>
 <p>De façon schématisé, voici l&rsquo;implentation des différents éléments à ajouter.
 <img src="images/IMG_20210925_172706_2.jpg" alt="1"></p>
 <h3 id="le-capteur">Le capteur</h3>
@@ -376,28 +382,46 @@ Pour vous assurer d&rsquo;une étanchéité et d&rsquo;un clipsage parfait de la
 <h4 id="installer-le-faisceau">Installer le faisceau</h4>
 <blockquote>
 <p>De retour devant votre moteur, venir faire le branchement des connecteurs.
-Construire également votre toron en utilisant des serflex tous les 7/10 cm de façon à optenir un toron très serré.</p>
+Attention à bien veiller à brancher <strong>le connecteur disposant d&rsquo;une gaine rouge</strong>, c&rsquo;est l&rsquo;injecteur principal qui alimente les autres.
+Construire également votre toron en utilisant des serflex tous les 7/10 cm de façon à optenir un toron très serré.
+<img src="images/IMG_20211002_184150.jpg" alt="1"></p>
 </blockquote>
 <h4 id="installer-le-capteur-de-température">Installer le capteur de température</h4>
 <blockquote>
-<p>Installer le capteur de température moteur au niveau du bouchon de remplissage d&rsquo;huile.</p>
+<p>Installer le capteur de température moteur au niveau du bouchon de remplissage d&rsquo;huile.
+<img src="images/IMG_20211002_184156.jpg" alt="1"></p>
 </blockquote>
 <h4 id="clipser-le-connecteur-du-capteur-danalyse-de-carburant">Clipser le connecteur du capteur d&rsquo;analyse de carburant</h4>
 <blockquote>
-<p>Faire courir le cable jusqu&rsquo;au capteur.</p>
+<p>Faire courir le cable jusqu&rsquo;au capteur.
+<img src="images/IMG_20211002_184208.jpg" alt="1"></p>
 </blockquote>
 <h4 id="relier-le-faisceau-à-la-masse-véhicule">Relier le faisceau à la masse véhicule</h4>
 <blockquote>
-<p>Du faisceau électrique part un cable noir de masse. Il est nécessaire de le fixer à un point de masse du véhicule.</p>
+<p>Du faisceau électrique part un cable noir de masse. Il est nécessaire de le fixer à un point de masse du véhicule.
+<img src="images/IMG_20211002_184142.jpg" alt="1"></p>
 </blockquote>
 <h4 id="fixer-le-boitier">Fixer le boitier</h4>
 <blockquote>
 <p>Utiliser un serflex pour fixer le boitier.</p>
 </blockquote>
 <h2 id="premier-démarrage-et-vérification">Premier démarrage et vérification</h2>
+<h3 id="installer-lapplication-eflexapp">Installer l&rsquo;application eFlexApp</h3>
 <p>Avant de procéder au démarrage, installer sur votre smartphone l&rsquo;application eFlexApp.
 Elle vous permettra de savoir si l&rsquo;installation est optimum.</p>
-<p>&hellip; écriture en cours &hellip;</p>
+<h3 id="démarrer-le-moteur">Démarrer le moteur</h3>
+<p>Logiquement votre véhicule démarrera normallement. D&rsquo;après la notice, il est possible que l&rsquo;on doive tirer un peu sur le démarreur.
+Ce ne fut pas mon cas, le moteur a démarré comme d&rsquo;habitude.</p>
+<p>Maintenant démarrer l&rsquo;application et sélectionner eFlexFuel au niveau du bluetooth.</p>
+<p>L&rsquo;accueil affiche entre autre les injecteurs connectés au boitier sous la forme d&rsquo;un carré vert.
+Dans mon cas, le moteur ne dispose que de 3 cylindres et on voit que les cylindres #1, #3 et #4 sont connectés et opérationnels.
+<img src="images/Screenshot_20211002-184526.jpg" alt="1"></p>
+<p>Aller également voir dans les erreurs depuis le menu de l&rsquo;application. Si tout va bien, vous devriez voir cela
+<img src="images/Screenshot_20211002-184541.jpg" alt="1"></p>
+<p>Enfin l&rsquo;entrée <em>Liste des données</em> vous affiche certaines informations, à vous de voir ce que vous pouvez en faire.
+<img src="images/Screenshot_20211002-184536.jpg" alt="1"></p>
+<h3 id="premier-passage-à-la-pompe">Premier passage à la pompe.</h3>
+<p>C&rsquo;est du bonheur, la 1ère fois, j&rsquo;ai mis 29 litres pour un peu plus de 17 € 😆</p>
 
         </div>
 
@@ -523,7 +547,13 @@ Elle vous permettra de savoir si l&rsquo;installation est optimum.</p>
             </li>
           </ul>
         </li>
-        <li><a href="#premier-démarrage-et-vérification">Premier démarrage et vérification</a></li>
+        <li><a href="#premier-démarrage-et-vérification">Premier démarrage et vérification</a>
+          <ul>
+            <li><a href="#installer-lapplication-eflexapp">Installer l&rsquo;application eFlexApp</a></li>
+            <li><a href="#démarrer-le-moteur">Démarrer le moteur</a></li>
+            <li><a href="#premier-passage-à-la-pompe">Premier passage à la pompe.</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
   </ul>
