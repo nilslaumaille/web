@@ -172,6 +172,10 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://nils.laumaille.fr/posts/informatique/omv/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://nils.laumaille.fr/categories/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
